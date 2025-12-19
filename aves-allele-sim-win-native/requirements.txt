@@ -1,0 +1,8 @@
+pandas>=2.1
+PyYAML>=6.0
+requests>=2.31
+tqdm>=4.66
+rich>=13.7
+pysam>=0.22
+pyranges>=0.0.129
+
