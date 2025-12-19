@@ -1,0 +1,24 @@
+species: gallus_gallus
+assembly: GRCg6a
+
+# Entrada
+vcf_dir: data/vcf
+
+# Saída (VCF preparado + índice .tbi)
+out_vcf: work/prepared/prepared.vcf.gz
+
+# Interseção com regiões regulatórias (opcional)
+do_regulatory_intersect: false
+regulatory_file: ""
+
+# Anotação (VEP REST)
+vep_backend: ensembl_rest
+rest_base_url: https://rest.ensembl.org
+rest_batch_size: 200
+rest_sleep_ms: 100
+
+# Paralelismo e robustez
+threads: 4
+max_retries: 5
+timeout_sec: 30
+
